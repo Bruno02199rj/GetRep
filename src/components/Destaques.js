@@ -8,16 +8,16 @@ import categorias, { getMovies } from '../services/api';
 
 
 const Destaques = () => {
-    // FAZER LOADING ""!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
 
     const [filme,setFilmes] = useState({});
-    const [logo, setLogo] = useState({});
+    
    
        
     let elurl = `https://api.themoviedb.org/3/movie/${filme.id}?api_key=226160706fe73dfd9049e232396120fa`
    
     let fristDate = new Date(filme.first_air_date);
-    let popularidade = Math.ceil(filme.popularity)
+
 
     const fetchFilmeAleatorio = async () =>{
         try {
